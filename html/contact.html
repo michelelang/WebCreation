@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>contact</title>
+<link rel="stylesheet" href="css/contact.css">
+
+</head>
+
+<body>
+        
+    <section id="hire">
+        <h1>Contact Us</h1>
+        
+        <form action="https://formspree.io/info@webcreation.co" method="post" >
+              <div class="field name-box">
+                    <input type="text" id="name" placeholder="What is your name?"/>
+                    <label for="name">Name</label>
+                    <span class="ss-icon">check</span>
+              </div>
+    
+              <div class="field email-box">
+                    <input type="text" id="email" placeholder="...@gmail.com"/>
+                    <label for="email">Email</label>
+                    <span class="ss-icon">check</span>
+              </div>
+    
+              <div class="field msg-box">
+                    <textarea id="msg" rows="4" placeholder="Tell us about you and your project"/></textarea>
+                    <label for="msg">Your message</label>
+                    <span class="ss-icon">check</span>
+              </div>
+    
+              <input class="button" type="submit" value="Send" />
+      </form>
+    </section>
+    <script>// Input Lock
+        $('textarea').blur(function () {
+            $('#hire textarea').each(function () {
+                $this = $(this);
+                if ( this.value != '' ) {
+                  $this.addClass('focused');
+                  $('textarea + label + span').css({'opacity': 1});
+                }
+                else {
+                  $this.removeClass('focused');
+                  $('textarea + label + span').css({'opacity': 0});
+                }
+            });
+        });
+        
+        $('#hire .field:first-child input').blur(function () {
+            $('#hire .field:first-child input').each(function () {
+                $this = $(this);
+                if ( this.value != '' ) {
+                  $this.addClass('focused');
+                  $('.field:first-child input + label + span').css({'opacity': 1});
+                }
+                else {
+                  $this.removeClass('focused');
+                  $('.field:first-child input + label + span').css({'opacity': 0});
+                }
+            });
+        });
+        
+        $('#hire .field:nth-child(2) input').blur(function () {
+            $('#hire .field:nth-child(2) input').each(function () {
+                $this = $(this);
+                if ( this.value != '' ) {
+                  $this.addClass('focused');
+                  $('.field:nth-child(2) input + label + span').css({'opacity': 1});
+                }
+                else {
+                  $this.removeClass('focused');
+                  $('.field:nth-child(2) input + label + span').css({'opacity': 0});
+                }
+            });
+        });</script>
+</body>
+
+</html>

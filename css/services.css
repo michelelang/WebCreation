@@ -1,0 +1,90 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 5%;
+    padding-right: 5%;
+    top: 0;
+    bottom: 0;
+}
+
+.grid-container {
+    display: grid;
+}
+
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.header {
+    margin-bottom: 3%;
+}
+
+.designPageGif {
+    width: 30%;
+    height: auto;
+}
+
+.developmentPageGif {
+    width: 40%;
+    height: auto;
+    margin-bottom: 2%;
+}
+
+.marketingPageGif {
+    width: 40%;
+    height: auto;
+}
+
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+
+    .headerMove {
+        margin-top: 20%;
+    }
+
+    .designPageGif {
+        width: 50%;
+    }
+    
+    .developmentPageGif {
+        width: 60%;
+    }
+
+    .marketingPageGif {
+        width: 80%;
+    }
+
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+
+    .headerMove {
+        margin-top: 15%;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .headerMove {
+        margin-top: 10%;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .headerMove {
+        margin-top: 5%;
+    }
+
+}

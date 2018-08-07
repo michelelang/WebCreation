@@ -1,0 +1,36 @@
+html, body {
+    font-family: 'PT Mono', monospace;
+    padding-top: 0;
+    line-height: 35px;
+    text-align: left !important;
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: [start] 4% [line1] 92% [cut]  4%;                     
+}
+
+.format {
+    grid-column: 2 / cut;
+    grid-row: 1;
+    height: 100%;
+    margin-top: 8%;
+}
+
+.header {
+    font-size: 2em !important;
+}
+
+.midHeader {
+    font-size: 1em !important;
+}
+
+.footer1, .footer2, .footer3, .footer4 {
+    font-size: 1em !important;
+    text-align: center !important;
+}
+
+.footer {
+    font-size: 3em !important;
+}

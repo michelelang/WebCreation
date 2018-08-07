@@ -1,0 +1,56 @@
+body{
+  background-image: url("../images/mosiac.jpg");
+  background-repeat: no-repeat;
+}
+
+#aboutSection {
+    margin-top: 5%;
+    text-align: center;
+    color: black;
+    font-family: 'PT Mono', monospace;
+    width: 100%;
+    height: auto;
+}
+
+.aboutHeader {
+    font-size: 60px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+   
+}
+
+.aboutText {
+    font-size: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 1%;
+    line-height: 30px;
+    padding-bottom: 10%;
+}
+
+.profilePic {
+    height: 250px;
+    width: 250px;
+}
+
+
+.footer1, .footer2, .footer3, .footer4 {
+    font-size: 1em !important;
+    text-align: center !important;
+  }
+  
+  .footer {
+    font-size: 3em !important;
+  }
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+.aboutHeader {
+    padding-top: 10%;
+}
+
+}
