@@ -26,6 +26,12 @@ html, body {
     margin-bottom: 5%;
 }
 
+.logoGif {
+    height: 35px;
+    width: 300px;
+    align-content: center;
+}
+
 .formContact {
     grid-column: line1 / end-big;
     grid-row: row2 / end;
