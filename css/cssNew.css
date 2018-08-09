@@ -1,0 +1,267 @@
+/* font-family: 'Roboto Mono', monospace; 
+font-family: 'Rubik Mono One', sans-serif;  */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+
+html, body {
+    font-family: 'Roboto Mono', monospace; 
+    padding: 0;
+    
+  }
+
+/* 
+  NAVBAR */
+
+  .USFlag {
+    height: 30px;
+    width: 30px;
+}
+
+.frFlag {
+    height: 30px;
+    width: 30px;
+}
+
+.nav-item {
+    font-family: 'Roboto Mono', monospace !important; 
+}
+
+/* END NAVBAR */
+
+
+/* SIDE NAV BAR*/
+.vNav {
+    position: fixed;
+    top: 20%;
+    left: 87%;
+    width: 50px;
+    z-index: 9999;
+    list-style-type: none;
+}
+
+.vNav ul {
+    position: relative;
+    padding: 3px;
+    padding-left: 35%;
+}
+
+.vNav ul li{
+    position: relative;
+    padding-bottom: 20px;
+    padding-left: 35%;
+    color: rgb(113,135,133);
+}
+
+.vNav a{
+    display: block;
+    width: 15px;
+    height: 15px;
+    text-indent: -9999px;
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: black;
+    text-decoration: none;
+}
+
+.vNav a:hover{
+    border-radius: 50%;
+    background-color: red;
+    text-decoration: none;
+}
+
+.vNav a.active{
+    border-radius: 50%;
+    background-color: rgb(207,219,218);
+    text-decoration: none;
+}
+
+.label {
+    position: relative;
+    top: -60%;
+    left: -200%;
+    width: 100%;
+    text-align: right;
+    font-size: 1em;
+    color: rgb(113,135,133);
+    display: none;
+}
+
+
+#section01 {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    height: 30px;
+    width: 420px;
+}
+
+#section02 {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    height: 50px;
+    width: 420px;
+}
+
+#section03 {
+    position: absolute;
+    top: 140%;
+    left: 0;
+    height:50px;
+    width: 420px;
+}
+
+#section04 {
+    position: absolute;
+    top: 210%;
+    left: 0;
+    height: 50px;
+    width: 420px;
+}
+/* SIDE NAV BAR END*/
+
+/* HEADER START */
+
+.grid-container-header {
+    display: grid;
+    grid-template-columns: [start] 5% [line1] 90% [end-big] 5% [end];                       
+}
+
+.header {
+    grid-column: start / end;
+    height: 100vh;
+}
+
+.headerText {
+    font-size: 1.5em;
+    color: black;
+    grid-column: 2 / 3;
+    text-align: center;
+    font-family: 'Rubik Mono One', sans-serif;  
+}
+
+/* HEADER END */
+
+
+/* SECTION 1 START */
+
+.grid-container-section1 {
+    display: grid;
+    grid-template-columns: [start] 5% [line1] 45% [line2] 45% [end-big] 5% [end];    
+    grid-gap: 10px;
+    /* border: 1px solid black;              */
+}
+
+.section1-img {
+    grid-column: 2 / 3;
+    /* border: 1px solid #000; */
+    height: 100vh;
+    /* grid-row: start / line1; */
+    float: right;
+}
+
+.section1-text {
+    grid-column: 3 / 4;
+    text-align: left;
+    /* border: 1px solid #000; */
+
+}
+
+/* SECTION 1 END */
+
+/* SECTION 2 START */
+
+/* .grid-container-section2 {
+    display: grid;
+    grid-template-columns: [start] 5% [line1] 45% [line2] 45% [end-big] 5% [end];    
+    grid-template-rows: 100vh;
+    border: 1px solid black;                  
+}
+
+.section2-img {
+    grid-column: line1 / line2;
+    display: inline-block;
+    height: 100vh;
+}
+
+.section2-text {
+    grid-column: line2 / end;
+    display: inline-block;
+    height: 100vh;
+} */
+
+/* SECTION 2 END */
+
+/* ALL SECTIONS */
+
+.section-imgs {
+    padding: 0;
+    width: 325px;
+    height: 300px;
+    max-width: 95%;
+    border: 1px solid black;
+}
+
+.section-text-all {
+    font-family: 'Roboto Mono', monospace; 
+    font-size: 1em;
+    height: 100vh;
+    max-width: 55%;
+}
+
+
+
+
+
+
+
+
+
+/* ***************MEDIA QUERIES*************** */
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .headerText {
+        margin-top: 30%;
+    }
+
+    .section-text-all {
+        max-width: 95%;
+    }
+
+
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .headerText {
+        margin-top: 32%;
+    }
+
+
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .headerText {
+        margin-top: 15%;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .headerText {
+        margin-top: 15%;
+    }
+} 
+
+
+
