@@ -1,0 +1,33 @@
+
+section {
+  position: relative;
+  padding: 10vh 10vw;
+  min-height: 100vh;
+}
+
+/* first box */
+.box {
+  position: relative;
+  width: 50%; height: 30vh;
+  background: transparent; margin: 10px; box-shadow: 0 0 10px rgba(0,0,0,.3);
+  text-align: center;
+  color: black;
+  font-size: 0.8em;
+  padding: 10px;
+}
+.box:nth-child(2) { background: transparent; }
+.box:nth-child(3) { background: transparent; }
+a {
+  color: inherit;
+}
+
+
+.delighter .box { transition: all 1s ease-out; }
+.delighter .box:nth-child(1) { transform: translate(-100%, 0); }
+.delighter .box:nth-child(2) { transform: translate(170%, -70%); }
+.delighter .box:nth-child(3) { transform: translate(20%, 0%); }
+
+.delighter.started .box:nth-child(1) { transform: translate(0, 0); }
+.delighter.started .box:nth-child(2) { transform: translate(70%, -70%); }
+.delighter.started .box:nth-child(3) { transform: translate(20%, -120%); }
+

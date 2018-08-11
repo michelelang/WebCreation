@@ -16,14 +16,21 @@
         crossorigin="anonymous">
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"></script>
 
     <link rel="stylesheet" type="text/css" href="../css/cssNew.css">
     <link rel="stylesheet" type="text/css" href="../css/contact.css">
     <link rel="stylesheet" type="text/css" href="../css/ghost.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik+Mono+One" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
 
 </head>
 
@@ -31,10 +38,12 @@
 
     <!-- NAVBAR START -->
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white; font-family: 'Montserrat', sans-serif; font-size: 18px;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: black!important; font-family: 'Montserrat', sans-serif; font-size: 18px;">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
                 aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                   
+                </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mr-auto">
@@ -56,7 +65,7 @@
                 </ul>
             </div>
 
-            <span class="navbar-brand">
+            <span class="navbar-item">
                 <ul class="text hidden">
                     <li>W</li>
                     <li class="ghost">e</li>
@@ -73,19 +82,15 @@
             </span>
 
             <span class="navbar-brand">
-                <a href="http://www.webcreation.co">
-                    <img class="USFlag" src="../images/us.png" alt="English">
-                </a>
-                <a href="http://www.fr.webcreation.co">
-                    <img class="frFlag" src="../images/fr.png" alt="French">
-                </a>
+                    <a href="http://www.webcreation.co" class="nav-link">EN</a>
+                    <a href="http://www.fr.webcreation.co" class="nav-link">FR</a>
             </span>
         </nav>
     </div>
     <!-- NAVBAR END -->
 
     <!-- SIDE NAV BAR START -->
-    <div class="vNav">
+    <!-- <div class="vNav">
         <ul class="vNav">
             <li>
                 <a href="#header">
@@ -114,13 +119,13 @@
                 </a>
             </li>
         </ul>
-    </div>
+    </div> -->
     <!-- SIDE NAV BAR START -->
 
 
 
     <!-- HEADER SECTION -->
-    <div class="grid-container-header">
+    <div class="grid-container-header bkg-img">
         <a id="header"></a>
 
         <div class="header par" id="bg">
@@ -137,29 +142,65 @@
     <!-- END HEADER SECTION -->
 
 
+
+
     <!-- SECTION 1 START -->
 
 
-    <div class="grid-container-section1">
+    <div class="grid-container-section1 article">
         <a id="section1"></a>
 
-        <div class="section1 par">
 
-            <div class="section1-img">
-                <img class="section-imgs" src="../images/test.jpg" alt="test img">
-            </div>
+    <section data-delighter="start:0.3" style="background: pink;">
+            <div class="box">1. Include the script</div>
+            <div class="box">2. Add data-delighter attributes</div>
+            <div class="box">3. Write your own CSS delighters</div>
+         </section>
+    </div>
+
+    <div class="grid-container-section1 article">
+            <a id="section1"></a>
+    
+    
+        <section data-delighter="start:0.3" style="background: yellow;">
+                <div class="box">1. Include the script</div>
+                <div class="box">2. Add data-delighter attributes</div>
+                <div class="box">3. Write your own CSS delighters</div>
+             </section>
         </div>
 
-            <div class="section1-text section-text-all">
-                <div>C’est une affaire de principe</div>
+        <div class="grid-container-section1 article">
+                <a id="section1"></a>
+        
+        
+            <section data-delighter="start:0.3" style="background: red;">
+                    <div class="box">1. Include the script</div>
+                    <div class="box">2. Add data-delighter attributes</div>
+                    <div class="box">3. Write your own CSS delighters</div>
+                 </section>
+            </div>
+<!-- 
+        <div class="section1 par">
+
+            <div class="section1-img" data-delighter="start:0.3">
+                <img class="box section-imgs" src="../images/test.jpg" alt="test img">
+            </div>
+        </div>
+            <div class="section-text-all" data-delighter="start:0.3" id="section1-text">
+
+                <div >
+                
+                <div >C’est une affaire de principe</div>
                 <p>Tous nos projets se construise à partir d’une toile vierge qui se dessine aux grés de vos besoins</p>
+            </div>
             </div>
 
    
 
-    </div>
+    </div> -->
 
     <!-- SECTION 1 END -->
+
 
     <!-- SECTION 2 START -->
 
@@ -186,6 +227,52 @@
 
 
     <!-- SECTION 2 END -->
+
+
+    <a id="contact"></a>
+    <!--   
+            <div class="contact">
+                <h3 class="headerContact">Get in touch</h3>
+                <button type="button" class="buttonStyle btn btn-primary moveBtn" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
+        </div>
+    </div> -->
+    <section id="hire">
+        <div class="grid-container2">
+            <div class="contactHeader">Contactez nous</div>
+
+            <form class="formContact" action="https://formspree.io/info@webcreation.co" method="post">
+                <div class="field name-box">
+                    <input type="text" id="name" placeholder="Votre nom?" />
+                    <label for="name">Nom</label>
+                    <span class="ss-icon">check</span>
+                </div>
+
+                <div class="field email-box">
+                    <input type="text" id="email" placeholder="...@gmail.com" />
+                    <label for="email">Adresse Email</label>
+                    <span class="ss-icon">check</span>
+                </div>
+
+                <div class="field msg-box">
+                    <textarea id="msg" rows="4" placeholder="Parlez nous de vous, de votre projet nous reviendrons vers vous tres vite" /></textarea>
+                    <label for="msg">Message</label>
+                    <span class="ss-icon">check</span>
+                </div>
+
+                <input class="button" type="submit" value="Send" />
+            </form>
+    </section>
+    </div>
+
+
+    <div class="grid-container3">
+        <a href="http://fr.webcreation.co" class="footer1">Acceuil</a>
+        <a href="http://frpackages.webcreation.co/" class="footer2">Packages</a>
+        <a href="http://fr.webcreation.co/#contact" class="footer3">Contact</a>
+        <div class="footer4">
+            <a href="http://frtc.webcreation.co/" target="_blank">Terms et Conditions</a>
+        </div>
+    </div>
 
 
 
@@ -243,15 +330,16 @@
     <script src="../js/timeline.js"></script>
     <script src="../js/ghost.js"></script>
     <script src="../js/contact.js"></script>
-    <script src="../js/jquery.js"></script>
+    <!-- <script src="../js/scriptSections.js"></script> -->
+    <script type="text/javascript" src="../js/delighters.js"></script>
 
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
