@@ -61,6 +61,11 @@ body {
 	animation: loaderAnim 0.7s linear infinite alternate forwards;
 }
 
+a{
+	pointer-events: auto!important;
+	cursor: pointer!important;
+}
+
 @keyframes loaderAnim {
 	to {
 		opacity: 1;
